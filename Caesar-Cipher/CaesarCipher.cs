@@ -85,7 +85,7 @@ namespace Caesar_Cipher
                 Console.WriteLine("Encryption has failed");
                 Environment.Exit(0);
             }
-            Console.WriteLine($"Cipher text:\n'{cipherText}'");
+            Console.WriteLine($"Cipher text:\n{cipherText}");
 
             // Decrypt cipher
             string decryptedText = cipher.Decrypt(cipherText, shift);
@@ -94,7 +94,7 @@ namespace Caesar_Cipher
                 Console.WriteLine("Decryption has failed");
                 Environment.Exit(0);
             }
-            Console.WriteLine($"Decrypted text:\n'{decryptedText}'");
+            Console.WriteLine($"Decrypted text:\n{decryptedText}");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 
 namespace Caesar_Cipher.UnitTests
@@ -288,14 +289,15 @@ namespace Caesar_Cipher.UnitTests
         {
             // Arrange
             const string text = "ABC";
-            const int shift = -2;
+            const int shift = -1;
             const string expected = "ZAB";
             CaesarCipher cipher = new CaesarCipher();
             // Act
             string encryptedText = cipher.Encrypt(text, shift);
             // Assert
-            Assert.AreNotEqual(expected, encryptedText);
+            Assert.AreEqual(expected, encryptedText);
         }
+
         [TestMethod]
         public void DecryptTest_WithValidData()
         {
