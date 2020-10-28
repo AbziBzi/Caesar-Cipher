@@ -46,7 +46,9 @@ namespace Caesar_Cipher
             if (c == 32)
                 return c;
             char offset = char.IsUpper(c) ? 'A' : 'a';
-            return (char) ((c + shift - offset) % 26 + offset);
+            if (shift < 0)
+                return (char)((c + (26+shift) - offset) % 26 + offset);
+            return (char)((c + shift - offset) % 26 + offset);
         }
 
         public string Decrypt(string encryptedText, int shift)
@@ -84,7 +86,7 @@ namespace Caesar_Cipher
                 Environment.Exit(0);
             }
             Console.WriteLine($"Cipher text:\n'{cipherText}'");
-            
+
             // Decrypt cipher
             string decryptedText = cipher.Decrypt(cipherText, shift);
             if (decryptedText == null)
