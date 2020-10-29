@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caesar-Cipher", "Caesar-Cipher.csproj", "{121E2F63-2F14-4301-B965-54FBC54BDB83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caesar-Cipher.UnitTests", "..\Caesar-CipherTests\Caesar-Cipher.UnitTests.csproj", "{4618E233-9818-4336-AFBD-4CCF5A170B1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caesar-Cipher.UnitTests", "..\Caesar-CipherTests\Caesar-Cipher.UnitTests.csproj", "{4618E233-9818-4336-AFBD-4CCF5A170B1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

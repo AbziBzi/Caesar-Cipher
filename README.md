@@ -19,12 +19,15 @@ The program then decrypts the previously encrypted text, which is also printed o
   - Encrypted text : Yy Zz Ww Xx
 ### Project structure
 
-The program has only one class, CaesarCipher, which has methods:
-- GetTextFromUser() - this method handles user input that will be encrypted
-- GetShiftFromUser() - this method also handles user input, but this one is for shift/key
-- Encrypt() - method that handles encryption
-- CipherAlgorithm() - in this method is all algorithm logic. There characters are shifted by the given number
-- Decrypt() - method that handles decryption
+The program has three classes: 
+- Program - is responsible for running program. The only method is Main()
+- UserInputHandler - which is responsible for user input handling and has following methods:
+  - GetTextFromUser() - this method handles user input that will be encrypted
+  - GetShiftFromUser() - this method also handles user input, but this one is for shift/key
+- CaesarCipher - which is responsible for cipher logic and has methods:
+  - Encrypt() - method that handles encryption
+  - CipherAlgorithm() - in this method is all algorithm logic. There characters are shifted by the given number
+  - Decrypt() - method that handles decryption
 
 Project also contains unit tests. Unit tests are written using MSTest framework.
-Unit test coverage for CaesarCipher class is 58%. The only method that is not tested is Main(). Coverage of other methods is 100%
+Unit test coverage for CaesarCipher class is 57%. The only method that is not tested is Main(). Coverage of other methods is 100%
