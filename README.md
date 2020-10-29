@@ -2,6 +2,7 @@
 
 In cryptography, a Caesar cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on.
 
+
 ### How program works
 
 First, the program asks the user to enter the text he wants to encrypt
@@ -10,6 +11,7 @@ After receiving the input, the program performs the encryption.
 The encrypted text is printed on the screen. 
 The program then decrypts the previously encrypted text, which is also printed on the screen
 
+
 ### Caesar cipher example 
 - When shift is 2
   - Plain text : Aa Bb Yy Zz
@@ -17,6 +19,8 @@ The program then decrypts the previously encrypted text, which is also printed o
 - Also works when shift is negative. In example -2
   - Plain text : Aa Bb Yy Zz
   - Encrypted text : Yy Zz Ww Xx
+
+  
 ### Project structure
 
 The program has three classes: 
